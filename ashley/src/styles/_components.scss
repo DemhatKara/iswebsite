@@ -10,13 +10,13 @@ preloader
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: $dark;
+    background-color: $light;
 
     & .mil-preloader-animation {
         opacity: 0;
         position: relative;
         height: 100vh;
-        color: $light;
+        color: $dark;
 
         & .mil-pos-abs {
             position: absolute;
@@ -85,7 +85,7 @@ cursor
         transform: scale(0);
 
         & svg {
-            fill: $lt-90;
+            fill: $dt-70;
         }
     }
 
@@ -95,7 +95,7 @@ cursor
         width: 100%;
         text-align: center;
         display: block;
-        color: $lt-90;
+        color: $dark;
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 2px;
@@ -205,13 +205,13 @@ frame
     & .mil-frame-top {
         @media screen and (max-width: 1200px) {
             height: 90px;
-            background-color: $dt-95;
-            border-bottom: solid 1px $lt-10;
+            background-color: $gs-5;
+            border-bottom: solid 1px $dt-10;
             padding: 0 30px;
             backdrop-filter: blur(8px);
 
             & .mil-logo {
-                color: $light;
+                color: $dark;
             }
 
             & .mil-menu-btn {
@@ -219,7 +219,7 @@ frame
                 & span,
                 & span:after,
                 & span:before {
-                    background: $light;
+                    background: $dark;
                 }
             }
 
@@ -342,7 +342,7 @@ menu
     z-index: 9;
     width: 100%;
     height: 100vh;
-    background-color: $dark;
+    background-color: $gs-5;
     opacity: 0;
     pointer-events: none;
     transition: $t-md;
@@ -363,7 +363,7 @@ menu
         }
 
         & .mil-logo {
-            color: $light;
+            color: $dark;
         }
 
         & .mil-menu-btn {
@@ -371,7 +371,7 @@ menu
             & span,
             & span:after,
             & span:before {
-                background-color: $light;
+                background-color: $dark;
             }
         }
     }
@@ -392,7 +392,7 @@ menu
         height: 100vh;
         display: flex;
         align-items: flex-end;
-        border-left: solid 1px $lt-10;
+        border-left: solid 1px $dt-10;
         opacity: 0;
         transform: translateY(30px);
         transition: $t-md;
@@ -463,7 +463,7 @@ menu
 
             &:hover {
                 transform: translateX(5px);
-                color: $light;
+                color: $accent;
             }
         }
     }
@@ -508,7 +508,7 @@ menu
                 display: flex;
                 align-items: center;
                 font-weight: 500;
-                color: $lt-80;
+                color: $dt-60;
                 font-size: $h4 + 6px;
                 transition: $t-md;
 
@@ -523,13 +523,13 @@ menu
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
-                    background-color: $lt-40;
+                    background-color: $dt-20;
                     transform: scale(0);
                     transition: $t-md;
                 }
 
                 &:hover {
-                    color: $light;
+                    color: $dark;
                 }
 
                 &.mil-active {
@@ -556,7 +556,7 @@ menu
             &.mil-has-children {
                 &>a {
                     &:hover {
-                        color: $light;
+                        color: $dark;
                         padding-left: 25px;
 
                         &:before {
@@ -581,7 +581,7 @@ menu
                         a {
                             display: block;
                             font-size: 12px;
-                            color: $lt-40;
+                            color: $dt-60;
                             letter-spacing: 2px;
                             font-weight: 500;
                             text-transform: uppercase;
@@ -591,7 +591,7 @@ menu
                             }
 
                             &:hover {
-                                color: $lt-80;
+                                color: $dark;
                                 transform: translateX(5px);
                             }
                         }
@@ -795,7 +795,7 @@ banner
     }
 
     & .mil-nimbus {
-        background: radial-gradient(50% 50% at 50% 50%, $accent 0%, rgba(250, 168, 69, 0) 100%);
+        background: radial-gradient(50% 50% at 50% 50%, $accent 0%, rgba(176, 224, 230, 0) 100%);
         width: 100%;
         padding-bottom: 100%;
         position: absolute;
@@ -835,7 +835,7 @@ circle text
         height: 140px;
 
         & text {
-            fill: $lt-40;
+            fill: $dt-40;
             text-transform: uppercase;
             font-size: 12px;
             font-weight: 500;
@@ -850,7 +850,7 @@ circle text
     &:hover {
         & svg {
             & text {
-                fill: $light;
+                fill: $dark;
             }
         }
     }
@@ -935,7 +935,7 @@ dodecahedron
     display: inline-block;
     width: 300px;
     height: 300px;
-    opacity: .2;
+    opacity: .08;
     pointer-events: none;
 }
 
@@ -945,7 +945,7 @@ dodecahedron
 
     & .mil-pentagon {
         & div {
-            border-top: .1px solid $light;
+            border-top: 1px solid $dt-40;
         }
     }
 }
@@ -956,7 +956,7 @@ dodecahedron
 
     & .mil-pentagon {
         & div {
-            border-top: 1px solid $light;
+            border-top: 1px solid $dt-40;
         }
     }
 
@@ -975,7 +975,7 @@ dodecahedron
 
     & .mil-pentagon {
         & div {
-            border-top: 1px solid $light;
+            border-top: 1px solid $dt-40;
         }
     }
 
@@ -994,7 +994,7 @@ dodecahedron
 
     & .mil-pentagon {
         & div {
-            border-top: .1px solid $light;
+            border-top: 1px solid $dt-40;
         }
     }
 
@@ -1300,13 +1300,13 @@ services
 }
 
 .mil-services-grid {
-    border-top: solid 1px $lt-10;
+    border-top: solid 1px $dt-10;
 
     & .mil-services-grid-item {
-        border-right: solid 1px $lt-10;
+        border-right: solid 1px $dt-10;
 
         &:first-child {
-            border-left: solid 1px $lt-10;
+            border-left: solid 1px $dt-10;
         }
     }
 
@@ -1314,10 +1314,10 @@ services
         padding-bottom: 90px;
 
         & .mil-services-grid-item {
-            border-bottom: solid 1px $lt-10;
+            border-bottom: solid 1px $dt-10;
 
             &:nth-child(3) {
-                border-left: solid 1px $lt-10;
+                border-left: solid 1px $dt-10;
             }
         }
     }
@@ -1326,8 +1326,8 @@ services
         padding-bottom: 90px;
 
         & .mil-services-grid-item {
-            border-left: solid 1px $lt-10;
-            border-bottom: solid 1px $lt-10;
+            border-left: solid 1px $dt-10;
+            border-bottom: solid 1px $dt-10;
         }
     }
 }
@@ -1385,7 +1385,7 @@ services
 
 .mil-service-list {
     & li {
-        border-bottom: solid 1px $lt-10;
+        border-bottom: solid 1px $dt-10;
         list-style-type: none;
         padding: 15px 0;
         text-transform: uppercase;
@@ -1394,13 +1394,13 @@ services
         font-size: 12px;
 
         &:first-child {
-            border-top: solid 1px $lt-10;
+            border-top: solid 1px $dt-10;
         }
     }
 
     &.mil-light {
         & li {
-            color: $lt-60;
+            color: $dark;
         }
     }
 
@@ -1480,7 +1480,7 @@ team
             transition-delay: 0s;
 
             & a {
-                color: $light;
+                color: $dark;
                 transition: $t-sm;
 
                 &:hover {
@@ -1546,7 +1546,7 @@ social icons
         }
 
         & a {
-            color: $light;
+            color: $dark;
             font-size: 18px;
             transition: $t-md;
 
@@ -1611,7 +1611,7 @@ revievs
         }
 
         & .mil-custom-dot {
-            background-color: red;
+            background-color: #FFB8D4;
             width: 90px;
             height: 90px;
             border-radius: 50%;
@@ -1938,7 +1938,7 @@ footer
                 display: block;
                 font-weight: 500;
                 font-size: $h4;
-                color: $lt-90;
+                color: $dark;
                 transition: $t-md;
 
                 &:hover {
@@ -1988,7 +1988,7 @@ footer
         transition: $t-md;
 
         &::placeholder {
-            color: $gs-50;
+            color: $dt-40;
             font-family: $font-1;
             font-size: 12px;
             font-weight: 500;
@@ -2340,8 +2340,8 @@ price
 .mil-price-card {
     display: block;
     width: 100%;
-    border-top: solid 1px $lt-10;
-    border-bottom: solid 1px $lt-10;
+    border-top: solid 1px $dt-10;
+    border-bottom: solid 1px $dt-10;
     padding: 60px 0 30px;
 
     & .mil-price-number {
@@ -2392,7 +2392,7 @@ price
 .mil-404-text {
     display: block;
     text-align: center;
-    color: $light;
+    color: $dark;
 }
 
 
@@ -2409,7 +2409,7 @@ price
 
 .mil-404 {
     position: relative;
-    color: $light;
+    color: $dark;
     font-size: 6em;
     font-weight: 500;
     animation: glitch-skew 1s infinite linear alternate-reverse;
@@ -2510,11 +2510,11 @@ images
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $lt-80;
+        background-color: $dt-10;
         transition: $t-md;
 
         &:hover {
-            background-color: $light;
+            background-color: $gs-10;
         }
 
         & img {
