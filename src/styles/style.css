@@ -74,7 +74,17 @@ body {
   color: rgb(0, 0, 0);
   line-height: 150%;
   overscroll-behavior: none;
+  background: linear-gradient(270deg, #ffffff, #fff2dd, #ffe2bd, #fff2dd);
+  background-size: 300% 300%;
+  animation: cinematicGradient 12s ease-in-out infinite;
 }
+
+@keyframes cinematicGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 @media screen and (max-width: 768px) {
   html,
   body {
